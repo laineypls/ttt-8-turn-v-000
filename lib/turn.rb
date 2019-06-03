@@ -35,6 +35,6 @@ def turn(user_input)
   if valid_move?(board, index)
     move(board, index)
   else
-    turn until index = valid_move?
+    turn(user_input)
   end
 end
